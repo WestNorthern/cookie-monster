@@ -77,11 +77,27 @@ body, html {
 }
 
 #laser-two{
-
+	position: absolute;
+	top: 100px;
+	left: -250px;
+	width: 500px;
+	height: 400px;
+	background: rgba(127,255,0,0.6);
+  -webkit-clip-path: polygon(53% 0, 35% 100%, 73% 100%);
+	z-index: 3;
+	opacity: 0.0;
 }
 
 #laser-three{
-
+  position: absolute;
+	top: 100px;
+	left: 0px;
+	width: 500px;
+	height: 400px;
+	background: rgba(127,255,0,0.6);
+  -webkit-clip-path: polygon(0 1%, 65% 100%, 100% 100%);
+	z-index: 3;
+	opacity: 0.0;
 }
 
 #fortune-jar-wrapper {
