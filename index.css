@@ -1,8 +1,8 @@
 body, html {
 	height: 100%;
-	/*background-image: url('kali.jpg');*/
-	background-repeat: no-repeat;
-	background-size: cover;
+	background-image: url('stars2.gif');
+	background-repeat: repeat;
+	background-size: contain;
 }
 
 
@@ -20,7 +20,7 @@ body, html {
 	left: -150px;
 	width: 300px;
 	height: 200px;
-	background: limegreen;
+	background: orchid;
   -webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
   z-index: 5;
 }
@@ -31,7 +31,8 @@ body, html {
 	top: 5px;
 	width: 95%;
 	height: 98%;
-	background: blue;
+	background-image: url(metal.jpg);
+	background-size: cover;
   -webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
   z-index: 5;
 }
@@ -56,7 +57,8 @@ body, html {
 	top: 5px;
 	width: 95%;
 	height: 98%;
-	background: blue;
+	background-image: url(ice.jpg);
+	background-size: cover;
   z-index: 4;
   border-top-left-radius: 100%;
 	border-top-right-radius: 100%;
@@ -106,7 +108,7 @@ body, html {
 	left: 60px;
 	width: 250px;
 	height: 100px;
-	background: limegreen;
+	background: darkorchid;
   -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
   z-index: 4;
 }
@@ -117,7 +119,8 @@ body, html {
 	top: 5px;
 	width: 95%;
 	height: 98%;
-	background: blue;
+	background-image: url('bismuth.jpg');
+	background-size: cover;
   -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
   z-index: 5;
 }
@@ -128,7 +131,7 @@ body, html {
 	left: 400px;
 	width: 250px;
 	height: 100px;
-	background: limegreen;
+	background: gray;
   -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
 	z-index: 4;
 }
@@ -139,7 +142,8 @@ body, html {
 	top: 5px;
 	width: 95%;
 	height: 98%;
-	background: blue;
+	background-image: url(rainbow.jpg);
+	background-size: cover;
   -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
   z-index: 5;
 }
@@ -150,7 +154,7 @@ body, html {
 	left: 800px;
 	width: 250px;
 	height: 100px;
-	background: limegreen;
+	background: darkorchid;
   -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
   z-index: 4;
 }
@@ -161,17 +165,10 @@ body, html {
 	top: 5px;
 	width: 95%;
 	height: 98%;
-	background: blue;
+	background-image: url(woodrain.jpeg);
+	background-size: cover;
   -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
   z-index: 5;
-}
-
-#fortune-label {
-
-}
-
-#fortune-counter {
-
 }
 
 
@@ -214,8 +211,8 @@ body, html {
 	position: absolute;
 	bottom: 50px;
 	left: 450px;
-	width: 130px;
-	height: 130px;
+	width: 125px;
+	height: 125px;
 	background: brown;
   -webkit-clip-path: circle(50% at 50% 50%);
   z-index: 2;
@@ -225,8 +222,8 @@ body, html {
 
 #chip-cookie {
 	position: absolute;
-	left: 5px;
-	top: 5px;
+	left: 2%;
+	top: 2%;
 	width: 95%;
 	height: 95%;
 	background: gold;
@@ -251,8 +248,8 @@ body, html {
 
 #rainbow-cookie {
 	position: absolute;
-	left: 5px;
-	top: 5px;
+	left: 2%;
+	top: 2%;
 	width: 95%;
 	height: 95%;
 	background: lemonchiffon;
@@ -351,3 +348,65 @@ body, html {
     100% {transform: translate(50px, -20px) rotate(5deg)}
 }
 
+#rainbow-counter{
+	width:50px;
+	height: 40px;
+	border: 1px solid lime;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: black;
+	line-height: 30px;
+	font-size: 1.5em;
+	border-radius: 3px;
+	text-align: center;
+	animation: neon5 1.5s ease-in-out infinite alternate;
+	transition: all 0.5s;
+	color: lime;
+
+
+}
+
+#fortune-counter{
+	width:50px;
+	height: 40px;
+	border: 1px solid lime;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: black;
+	line-height: 30px;
+	font-size: 1.5em;
+	border-radius: 3px;
+	text-align: center;
+	animation: neon5 1.5s ease-in-out infinite alternate;
+	transition: all 0.5s;
+	color: lime;
+}
+
+#chip-counter{
+	width:50px;
+	height: 40px;
+	border: 1px solid lime;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: black;
+	line-height: 30px;
+	font-size: 1.5em;
+	border-radius: 3px;
+	text-align: center;
+	animation: neon5 1.5s ease-in-out infinite alternate;
+	transition: all 0.5s;
+	color: lime;
+}
+
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
+}
