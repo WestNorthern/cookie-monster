@@ -59,7 +59,9 @@ $(function(){
     fortuneC.animate(
     	{
     		left: '450px', 
-    		top: '-600px'
+    		top: '-600px',
+    		width: '50px',
+    		height: '50px'
     	})
     .animate(
     {
@@ -67,7 +69,9 @@ $(function(){
     })
     .animate(
     	{top: '-200px',
-    	 left: '50px'
+    	 left: '120px',
+    	 width: '150px',
+    	 height: '150px'
     })
     .animate(
     {

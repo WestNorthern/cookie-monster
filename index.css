@@ -1,7 +1,73 @@
 body, html {
 	height: 100%;
+	/*background-image: url('kali.jpg');*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#spaceship {
+	position: relative;
+	top: 0;
+	left: 50%;
+}
+
+#saucer-wrapper {
+	position: absolute;
+	top: 0px;
+	left: -150px;
+
+	width: 300px;
+	height: 200px;
+	background: limegreen;
+-webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
+
+	z-index: 4;
+}
+
+#saucer{
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background: blue;
+-webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
+  z-index: 5;
+}
+
+#fortune-jar-wrapper {
+  position: absolute;
+	top: -100px;
+	left: 60px;
+
+	width: 250px;
+	height: 350px;
+	background: limegreen;
+-webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+
+	z-index: 4;
+}
+
+#fortune-jar {
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background: blue;
+-webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 5;
+}
+
+#fortune-label {
 
 }
+
+#fortune-counter {
+
+}
+
 
 #cookie-wrapper {
 	position: absolute;
@@ -17,9 +83,8 @@ body, html {
 
 	width: 150px;
 	height: 150px;
-	background: orange;
-	-webkit-clip-path: polygon(39% 6%, 74% 9%, 100% 35%, 100% 70%, 80% 90%, 53% 98%, 22% 83%, 2% 68%, 57% 49%, 1% 32%);
-
+	border-radius: 50%;
+	background: transparent;
 	z-index: 2;
 
 }
@@ -27,12 +92,15 @@ body, html {
 
 #fortune-cookie {
 	position: absolute;
+	border-radius: 50%;
+
 	left: 7px;
 	top: 5px;
 	width: 95%;
 	height: 95%;
-	background: gold;
-	-webkit-clip-path: polygon(39% 6%, 74% 9%, 100% 35%, 100% 70%, 80% 90%, 53% 98%, 22% 83%, 2% 68%, 57% 49%, 1% 32%);
+	background-image: url('bnw.jpg');
+	background-position: center;
+	background-size: 300px 300px;
   z-index: 3;
 
 }
