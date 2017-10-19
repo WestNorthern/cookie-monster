@@ -56,12 +56,15 @@ $(function(){
 
 	$(document).on('click', '#fortune-cookie', function(){
     let fortuneC = $("#fortune-cookie-wrapper");
+    $('#laser-one').animate({
+    	opacity: '1'
+    });
     fortuneC.animate(
     	{
-    		left: '450px', 
-    		top: '-600px',
-    		width: '50px',
-    		height: '50px'
+    		left: '550px', 
+    		top: '-500px',
+    		width: '30px',
+    		height: '30px'
     	})
     .animate(
     {
@@ -78,6 +81,9 @@ $(function(){
     	opacity: '1.0'
     });
     console.log('Boooo');
+    $('#laser-one').animate({
+    	opacity: '0'
+    });
 	});
 
 

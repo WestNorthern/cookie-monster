@@ -16,13 +16,11 @@ body, html {
 	position: absolute;
 	top: 0px;
 	left: -150px;
-
 	width: 300px;
 	height: 200px;
 	background: limegreen;
--webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
-
-	z-index: 4;
+  -webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
+  z-index: 4;
 }
 
 #saucer{
@@ -32,21 +30,65 @@ body, html {
 	width: 95%;
 	height: 98%;
 	background: blue;
--webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
+  -webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
   z-index: 5;
+}
+
+#over-dome-wrapper{
+	position: absolute;
+	top: 30px;
+	left: -50px;
+	width: 125px;
+	height: 100px;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	background: limegreen;
+
+	z-index: 3;
+}
+
+#over-dome{
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background: blue;
+  z-index: 4;
+  border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+}
+
+#laser-one {
+	position: absolute;
+	top: 100px;
+	left: -400px;
+	width: 500px;
+	height: 400px;
+	background: rgba(127,255,0,0.6);
+	-webkit-clip-path: polygon(89% 0, 0% 100%, 38% 100%);
+	z-index: 3;
+	opacity: 0.0;
+
+}
+
+#laser-two{
+
+}
+
+#laser-three{
+
 }
 
 #fortune-jar-wrapper {
   position: absolute;
 	top: -100px;
 	left: 60px;
-
 	width: 250px;
-	height: 350px;
+	height: 100px;
 	background: limegreen;
--webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
-
-	z-index: 4;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 4;
 }
 
 #fortune-jar {
@@ -56,7 +98,51 @@ body, html {
 	width: 95%;
 	height: 98%;
 	background: blue;
--webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 5;
+}
+
+#chip-jar-wrapper {
+	position: absolute;
+	top: -100px;
+	left: 400px;
+	width: 250px;
+	height: 100px;
+	background: limegreen;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+	z-index: 4;
+}
+
+#chip-jar {
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background: blue;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 5;
+}
+
+#rainbow-jar-wrapper {
+	position: absolute;
+	top: -100px;
+	left: 800px;
+	width: 250px;
+	height: 100px;
+	background: limegreen;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 4;
+}
+
+#rainbow-jar {
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background: blue;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
   z-index: 5;
 }
 
@@ -93,7 +179,6 @@ body, html {
 #fortune-cookie {
 	position: absolute;
 	border-radius: 50%;
-
 	left: 7px;
 	top: 5px;
 	width: 95%;
@@ -108,14 +193,12 @@ body, html {
 #chip-wrapper {
 	position: absolute;
 	bottom: 50px;
-	left: 350px;
-
+	left: 450px;
 	width: 130px;
 	height: 130px;
 	background: brown;
--webkit-clip-path: circle(50% at 50% 50%);
-
-	z-index: 2;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  z-index: 2;
 
 }
 
@@ -127,7 +210,7 @@ body, html {
 	width: 95%;
 	height: 95%;
 	background: gold;
--webkit-clip-path: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
   z-index: 3;
 
 }
@@ -136,13 +219,11 @@ body, html {
 #rainbow-wrapper {
 	position: absolute;
 	bottom: 30px;
-	left: 600px;
-
-	width: 200px;
-	height: 200px;
+	left: 850px;
+	width: 170px;
+	height: 170px;
 	background: brown;
   -webkit-clip-path: ellipse(40% 36% at 52% 40%);
-
 	z-index: 2;
 
 }
