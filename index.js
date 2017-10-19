@@ -54,4 +54,27 @@ $(function(){
 		});
 
 
+	$(document).on('click', '#fortune-cookie', function(){
+    let fortuneC = $("#fortune-cookie-wrapper");
+    fortuneC.animate(
+    	{
+    		left: '450px', 
+    		top: '-600px'
+    	})
+    .animate(
+    {
+    	opacity: '0'
+    })
+    .animate(
+    	{top: '-200px',
+    	 left: '50px'
+    })
+    .animate(
+    {
+    	opacity: '1.0'
+    });
+    console.log('Boooo');
+	});
+
+
 });

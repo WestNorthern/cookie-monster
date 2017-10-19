@@ -44,7 +44,7 @@ body, html {
 
 	width: 130px;
 	height: 130px;
-	background: gold;
+	background: brown;
 -webkit-clip-path: circle(50% at 50% 50%);
 
 	z-index: 2;
@@ -58,7 +58,7 @@ body, html {
 	top: 5px;
 	width: 95%;
 	height: 95%;
-	background: lemonchiffon;
+	background: gold;
 -webkit-clip-path: circle(50% at 50% 50%);
   z-index: 3;
 
@@ -86,7 +86,7 @@ body, html {
 	top: 5px;
 	width: 95%;
 	height: 95%;
-	background: gold;
+	background: lemonchiffon;
   -webkit-clip-path: ellipse(40% 36% at 52% 40%);
   z-index: 3;
 
@@ -169,7 +169,7 @@ body, html {
 	top: 25%;
 	width: 10%;
 	height: 10%;
-	background: lime;
+	background: blue;
   -webkit-clip-path: ellipse(40% 36% at 52% 40%);
   z-index: 4;
 
