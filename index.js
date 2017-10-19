@@ -59,7 +59,7 @@ $(function(){
 
 		});
 
-	$(document).on('click', '#erase', function(){
+	$(document).on('click', '#moon', function(){
 		eraseCookies();
 		displayCookies();
 
