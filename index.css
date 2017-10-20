@@ -1,7 +1,186 @@
 body, html {
 	height: 100%;
+	background-image: url('stars2.gif');
+	background-repeat: repeat;
+	background-size: contain;
+}
+
+#moon {
+	position: absolute;
+	left: -600px;
+	top: 60px;
+	width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 0 ghostwhite;
+}
+
+
+#spaceship {
+	position: relative;
+	top: 0;
+	left: 50%;
+}
+
+#saucer-wrapper {
+	animation: float 2.8s infinite alternate ease-in-out;
+	transform-origin: -10% 60%;
+	position: absolute;
+	top: -40px;
+	left: -150px;
+	width: 300px;
+	height: 200px;
+	background: orchid;
+  -webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
+  z-index: 5;
+}
+
+#saucer{
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background-image: url(metal.jpg);
+	background-size: cover;
+  -webkit-clip-path: polygon(61% 43%, 100% 54%, 100% 68%, 59% 73%, 0 65%, 0 53%);
+  z-index: 5;
+}
+
+#over-dome-wrapper{
+	position: absolute;
+	top: 0px;
+	left: -50px;
+	width: 125px;
+	height: 80px;
+	border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	background: limegreen;
+	animation: float 2.8s infinite alternate ease-in-out;
+	transform-origin: -10% 60%;
+	z-index: 4;
+}
+
+#over-dome{
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background-image: url(ice.jpg);
+	background-size: cover;
+  z-index: 4;
+  border-top-left-radius: 100%;
+	border-top-right-radius: 100%;
+	/*z-index: 6*/
+}
+
+#laser-one {
+	position: absolute;
+	top: 100px;
+	left: -400px;
+	width: 500px;
+	height: 400px;
+	background: rgba(127,255,0,0.6);
+	-webkit-clip-path: polygon(89% 0, 0% 100%, 38% 100%);
+	z-index: 3;
+	opacity: 0.0;
 
 }
+
+#laser-two{
+	position: absolute;
+	top: 100px;
+	left: -250px;
+	width: 500px;
+	height: 400px;
+	background: rgba(127,255,0,0.6);
+  -webkit-clip-path: polygon(53% 0, 35% 100%, 73% 100%);
+	z-index: 3;
+	opacity: 0.0;
+}
+
+#laser-three{
+  position: absolute;
+	top: 100px;
+	left: 0px;
+	width: 500px;
+	height: 400px;
+	background: rgba(127,255,0,0.6);
+  -webkit-clip-path: polygon(0 1%, 65% 100%, 100% 100%);
+	z-index: 3;
+	opacity: 0.0;
+}
+
+#fortune-jar-wrapper {
+  position: absolute;
+	top: -100px;
+	left: 60px;
+	width: 250px;
+	height: 100px;
+	background: darkorchid;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 4;
+}
+
+#fortune-jar {
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background-image: url('bismuth.jpg');
+	background-size: cover;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 5;
+}
+
+#chip-jar-wrapper {
+	position: absolute;
+	top: -100px;
+	left: 400px;
+	width: 250px;
+	height: 100px;
+	background: gray;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+	z-index: 4;
+}
+
+#chip-jar {
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background-image: url(rainbow.jpg);
+	background-size: cover;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 5;
+}
+
+#rainbow-jar-wrapper {
+	position: absolute;
+	top: -100px;
+	left: 800px;
+	width: 250px;
+	height: 100px;
+	background: darkorchid;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 4;
+}
+
+#rainbow-jar {
+	position: absolute;
+	left: 7px;
+	top: 5px;
+	width: 95%;
+	height: 98%;
+	background-image: url(woodrain.jpeg);
+	background-size: cover;
+  -webkit-clip-path: polygon(8% 13%, 0 10%, 0 0, 100% 0, 100% 10%, 93% 13%, 100% 19%, 100% 90%, 95% 100%, 7% 100%, 0 90%, 0 21%);
+  z-index: 5;
+}
+
 
 #cookie-wrapper {
 	position: absolute;
@@ -17,9 +196,8 @@ body, html {
 
 	width: 150px;
 	height: 150px;
-	background: orange;
-	-webkit-clip-path: polygon(39% 6%, 74% 9%, 100% 35%, 100% 70%, 80% 90%, 53% 98%, 22% 83%, 2% 68%, 57% 49%, 1% 32%);
-
+	border-radius: 50%;
+	background: transparent;
 	z-index: 2;
 
 }
@@ -27,12 +205,14 @@ body, html {
 
 #fortune-cookie {
 	position: absolute;
+	border-radius: 50%;
 	left: 7px;
 	top: 5px;
 	width: 95%;
 	height: 95%;
-	background: gold;
-	-webkit-clip-path: polygon(39% 6%, 74% 9%, 100% 35%, 100% 70%, 80% 90%, 53% 98%, 22% 83%, 2% 68%, 57% 49%, 1% 32%);
+	background-image: url('bnw.jpg');
+	background-position: center;
+	background-size: 300px 300px;
   z-index: 3;
 
 }
@@ -40,26 +220,24 @@ body, html {
 #chip-wrapper {
 	position: absolute;
 	bottom: 50px;
-	left: 350px;
-
-	width: 130px;
-	height: 130px;
-	background: gold;
--webkit-clip-path: circle(50% at 50% 50%);
-
-	z-index: 2;
+	left: 450px;
+	width: 125px;
+	height: 125px;
+	background: brown;
+  -webkit-clip-path: circle(50% at 50% 50%);
+  z-index: 2;
 
 }
 
 
 #chip-cookie {
 	position: absolute;
-	left: 5px;
-	top: 5px;
+	left: 2%;
+	top: 2%;
 	width: 95%;
 	height: 95%;
-	background: lemonchiffon;
--webkit-clip-path: circle(50% at 50% 50%);
+	background: gold;
+  -webkit-clip-path: circle(50% at 50% 50%);
   z-index: 3;
 
 }
@@ -68,13 +246,11 @@ body, html {
 #rainbow-wrapper {
 	position: absolute;
 	bottom: 30px;
-	left: 600px;
-
-	width: 200px;
-	height: 200px;
+	left: 850px;
+	width: 170px;
+	height: 170px;
 	background: brown;
   -webkit-clip-path: ellipse(40% 36% at 52% 40%);
-
 	z-index: 2;
 
 }
@@ -82,11 +258,11 @@ body, html {
 
 #rainbow-cookie {
 	position: absolute;
-	left: 5px;
-	top: 5px;
+	left: 2%;
+	top: 2%;
 	width: 95%;
 	height: 95%;
-	background: gold;
+	background: lemonchiffon;
   -webkit-clip-path: ellipse(40% 36% at 52% 40%);
   z-index: 3;
 
@@ -169,8 +345,78 @@ body, html {
 	top: 25%;
 	width: 10%;
 	height: 10%;
-	background: lime;
+	background: blue;
   -webkit-clip-path: ellipse(40% 36% at 52% 40%);
   z-index: 4;
 
+}
+
+
+@keyframes float {
+    0% {transform: translate(0px, 0px) rotate(0deg)}
+    50% {transform: translate(20px, 80px) rotate(0deg)}
+    100% {transform: translate(50px, -20px) rotate(5deg)}
+}
+
+#rainbow-counter{
+	width:50px;
+	height: 40px;
+	border: 1px solid lime;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: black;
+	line-height: 30px;
+	font-size: 1.5em;
+	border-radius: 3px;
+	text-align: center;
+	animation: neon5 1.5s ease-in-out infinite alternate;
+	transition: all 0.5s;
+	color: lime;
+
+
+}
+
+#fortune-counter{
+	width:50px;
+	height: 40px;
+	border: 1px solid lime;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: black;
+	line-height: 30px;
+	font-size: 1.5em;
+	border-radius: 3px;
+	text-align: center;
+	animation: neon5 1.5s ease-in-out infinite alternate;
+	transition: all 0.5s;
+	color: lime;
+}
+
+#chip-counter{
+	width:50px;
+	height: 40px;
+	border: 1px solid lime;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	background: black;
+	line-height: 30px;
+	font-size: 1.5em;
+	border-radius: 3px;
+	text-align: center;
+	animation: neon5 1.5s ease-in-out infinite alternate;
+	transition: all 0.5s;
+	color: lime;
+}
+
+
+@-webkit-keyframes neon5 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FF9900, 0 0 70px #FF9900, 0 0 80px #FF9900, 0 0 100px #FF9900, 0 0 150px #FF9900;
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FF9900, 0 0 35px #FF9900, 0 0 40px #FF9900, 0 0 50px #FF9900, 0 0 75px #FF9900;
+  }
 }
